@@ -1,0 +1,23 @@
+
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.display{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 650px;
+    width: 500px;
+    border: 2px solid black;
+    
+}
+
+.heading{
+    padding: 25px;
+}
