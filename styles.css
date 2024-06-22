@@ -1,6 +1,6 @@
 
 
-.container{
+#container{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -8,16 +8,26 @@
     
 }
 
-.display{
+#display{
     display: flex;
-    justify-content: center;
-    align-items: center;
     height: 650px;
     width: 500px;
     border: 2px solid black;
     
 }
 
-.heading{
+#heading{
     padding: 25px;
+}
+
+.col{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.row{
+    flex: 1;
+    flex-direction: column;
+    border: solid rgb(206, 202, 202) 0.1px;
 }
