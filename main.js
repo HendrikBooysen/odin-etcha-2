@@ -1,9 +1,18 @@
 
 
 const display = document.getElementById('display');
+const resetButton = document.getElementById('resetButton');
 
+
+let size = prompt("How many blocks do you want ?");
 
 function getBoard(size){
+
+    if(size > 100){
+
+        display.textContent = " You have to chose below 100 ! Click the Reset Board button.";
+
+    }else {
 for(let i = 0; i < size; i++){
 
     const col = document.createElement('div');
@@ -21,5 +30,17 @@ for(let i = 0; i < size; i++){
 };
 
 };
+};
 
-getBoard(25);
+
+function resetBoard(){
+    const squares = document.querySelectorAll('.row');
+    squares.forEach(square => {
+        square.style.backgroundColor = 'white';
+    });
+    location.reload();
+};
+
+resetButton.addEventListener('click', resetBoard);
+
+getBoard(size);
